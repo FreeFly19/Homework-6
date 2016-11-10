@@ -1,0 +1,25 @@
+public class A{
+	 static int max=-1;
+	 static int buf=0;
+	public   static void main(String []args){
+		int array[]=new int[5];
+		System.out.println("Максимальний індекс масива= "+functindex(array));
+		
+}
+	public static int functindex(int array[]){
+		for(int i=0;i<array.length;i++){
+				array[i]=i+i;
+				if(array[i]>max){
+					max=array[i];
+					buf++;
+				}
+				
+			}
+			System.out.println(" ");
+			return buf;
+			
+			}
+		
+		
+		
+	}

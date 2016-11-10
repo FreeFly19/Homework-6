@@ -1,0 +1,21 @@
+public class A{
+	 static int mul=1;
+	
+	public   static void main(String []args){
+		int array[]=new int[5];
+		System.out.println("Добуток всіх елеменетів масиву="+multiplication(array));
+}
+	public static int multiplication(int array[]){
+		for(int i=1;i<array.length;i++){
+				array[i]=i+i;
+				mul=mul*array[i];
+				
+			}
+			System.out.println(" ");
+			return mul;
+			
+			}
+		
+		
+		
+	}

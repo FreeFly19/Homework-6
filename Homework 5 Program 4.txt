@@ -1,0 +1,39 @@
+public class A{
+	 static int index=0;
+	
+	public   static void main(String []args){
+		int mass[][]=new int[6][6];
+		multiplication(mass);
+	
+}
+	public static void multiplication(int array[][]){
+		for(int i=0;i<5;i++){
+			for(int j=0;j<5;j++){
+				array[i][j]=1+i*j;
+				System.out.print(" "+array[i][j]+" ");
+			}
+			System.out.println(" ");
+			}
+		
+		int max=-1;
+		for(int i=0;i<5;i++){
+			for(int j=4;j>0;j--){
+				if(array[i][j]>array[i][j+1]){
+					int buf=array[i][j];
+					array[i][j]=array[i][j+1];
+					array[i][j+1]=buf;
+					if(buf>max){
+						max=buf;
+					}
+					
+				}
+				
+	}
+			
+			
+			System.out.print(" "+max);
+		}
+		
+		
+	}
+}
